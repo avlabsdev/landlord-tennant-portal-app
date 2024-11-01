@@ -4,6 +4,9 @@ import houseIconSVG from './images/house-chimney-user-solid.svg'
 import menuIcon from './images/bars.svg'
 import apartmentsPhoto from './images/apartments.jpg'
 import moneyCheckIcon from './images/money-check.svg'
+import requestsIcon from './images/requests.svg'
+import trackingIcon from './images/tracking.svg'
+import crownIcon from './images/crown.svg'
 
 export default function Home() {
   return (
@@ -25,13 +28,19 @@ export default function Home() {
           <div className="flex flex-col gap-4 sm:flex-row">
             <div className="flex gap-4 sm:w-1/2 w-full">
               <button className="flex items-center justify-center border border-stone-800 rounded-xl aspect-square bg-red-700 hover:bg-red-600 transition-colors w-full">
-                <Image src={moneyCheckIcon} alt="House icon" className="w-8" />
+                <Image src={moneyCheckIcon} alt="Money check icon" className="h-8" />
               </button>
-              <button className="flex items-center justify-center border border-stone-800 rounded-xl aspect-square bg-purple-700 hover:bg-purple-600 transition-colors w-full">02</button>
+              <button className="flex items-center justify-center border border-stone-800 rounded-xl aspect-square bg-purple-700 hover:bg-purple-600 transition-colors w-full">
+                <Image src={requestsIcon} alt="Money check icon" className="h-8" />
+              </button>
             </div>
             <div className="flex gap-4 sm:w-1/2 w-full">
-              <button className="flex items-center justify-center border border-stone-800 rounded-xl aspect-square bg-blue-700 hover:bg-blue-600 transition-colors w-full">03</button>
-              <button className="flex items-center justify-center border border-stone-800 rounded-xl aspect-square bg-teal-700 hover:bg-teal-600 transition-colors w-full">04</button>
+              <button className="flex items-center justify-center border border-stone-800 rounded-xl aspect-square bg-blue-700 hover:bg-blue-600 transition-colors w-full">
+                <Image src={trackingIcon} alt="Money check icon" className="h-8" />
+              </button>
+              <button className="flex items-center justify-center border border-stone-800 rounded-xl aspect-square bg-teal-700 hover:bg-teal-600 transition-colors w-full">
+                <Image src={crownIcon} alt="Money check icon" className="h-8" />
+              </button>
             </div>
           </div>
           <div className="p-4 flex flex-col gap-4">
