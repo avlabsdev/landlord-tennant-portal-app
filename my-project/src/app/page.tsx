@@ -15,7 +15,7 @@ export default function Home() {
           <Image src={menuIcon} alt="House icon" className="h-6 w-auto" />
         </button>
       </header>
-      <main className="p-4 text-white bg-stone-900 rounded-xl border border-stone-800">
+      <main className="p-4 text-white bg-stone-900 rounded-xl border border-stone-800 container mx-auto">
         <section className="flex flex-col gap-4">
           <Image src={profilePhoto} alt="Profile photo" className="w-full rounded-xl" />
           <h1 className="font-bold text-xl">Welcome to my app!</h1>
