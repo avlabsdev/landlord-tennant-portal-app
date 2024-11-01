@@ -1,6 +1,6 @@
 import Image from "next/image";
 import houseIconSVG from './images/house-chimney-user-solid.svg'
-import profilePhoto from './images/profile-photo.png'
+// import profilePhoto from './images/profile-photo.png'
 import menuIcon from './images/bars.svg'
 
 export default function Home() {
