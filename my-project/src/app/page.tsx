@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="mx-auto max-w-3xl p-4 flex flex-col gap-4">
       <header className="flex items-center justify-between container mx-auto p-2 bg-stone-900 rounded-xl border border-stone-800">
-        <button className="p-2 text-white flex items-center gap-3">
+        <button className="p-2 text-white flex items-center gap-2">
           <Image src={houseIconSVG} alt="House icon" className="h-6 w-auto" />
           <span className="font-bold">RentHero&trade;</span>
         </button>
