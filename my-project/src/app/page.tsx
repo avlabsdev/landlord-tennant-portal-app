@@ -4,7 +4,6 @@ import houseIconSVG from './images/house-chimney-user-solid.svg'
 import menuIcon from './images/bars.svg'
 import apartmentsPhoto from './images/apartments.jpg'
 import moneyCheckIcon from './images/money-check.svg'
-import superhero3DImage from './images/superhero.png'
 
 export default function Home() {
   return (
@@ -20,9 +19,8 @@ export default function Home() {
       </header>
       <main className="p-4 bg-stone-900 rounded-xl border border-stone-800 container mx-auto">
         <section className="flex flex-col gap-4">
-          <div className="flex flex-col gap-4 border-stone-800 border rounded-xl relative items-center justify-center">
-            <Image src={superhero3DImage} alt="Superhero" className="w-2/3 h-2/3 absolute z-10" />
-            <Image src={apartmentsPhoto} alt="Apartments photo" className="rounded-xl mix-blend-screen z-0" />
+          <div className="flex flex-col gap-4 border-stone-800 border rounded-xl items-center justify-center">
+            <Image priority={true} src={apartmentsPhoto} alt="Apartments photo" className="rounded-xl mix-blend-screen z-0" />
           </div>
           <div className="flex flex-col gap-4 sm:flex-row">
             <div className="flex gap-4 sm:w-1/2 w-full">
