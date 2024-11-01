@@ -2,6 +2,9 @@ import Image from "next/image";
 import houseIconSVG from './images/house-chimney-user-solid.svg'
 // import profilePhoto from './images/profile-photo.png'
 import menuIcon from './images/bars.svg'
+import apartmentsPhoto from './images/apartments.jpg'
+import moneyCheckIcon from './images/money-check.svg'
+import superhero3DImage from './images/superhero.png'
 
 export default function Home() {
   return (
@@ -17,14 +20,24 @@ export default function Home() {
       </header>
       <main className="p-4 bg-stone-900 rounded-xl border border-stone-800 container mx-auto">
         <section className="flex flex-col gap-4">
-          <div className="grid grid-rows-2 grid-flow-col gap-4 sm:grid-rows-1 sm:pr-2">
-            <button className="flex items-center justify-center border border-stone-800 p-4 rounded-xl aspect-square">01</button>
-            <button className="flex items-center justify-center border border-stone-800 p-4 rounded-xl aspect-square">02</button>
-            <button className="flex items-center justify-center border border-stone-800 p-4 rounded-xl aspect-square">03</button>
-            <button className="flex items-center justify-center border border-stone-800 p-4 rounded-xl aspect-square">04</button>
+          <div className="flex flex-col gap-4 border-stone-800 border rounded-xl relative items-center justify-center">
+            <Image src={superhero3DImage} alt="Superhero" className="w-2/3 h-2/3 absolute z-10" />
+            <Image src={apartmentsPhoto} alt="Apartments photo" className="rounded-xl mix-blend-screen z-0" />
+          </div>
+          <div className="flex flex-col gap-4 sm:flex-row">
+            <div className="flex gap-4 sm:w-1/2 w-full">
+              <button className="flex items-center justify-center border border-stone-800 rounded-xl aspect-square bg-red-700 hover:bg-red-600 transition-colors w-full">
+                <Image src={moneyCheckIcon} alt="House icon" className="w-8" />
+              </button>
+              <button className="flex items-center justify-center border border-stone-800 rounded-xl aspect-square bg-purple-700 hover:bg-purple-600 transition-colors w-full">02</button>
+            </div>
+            <div className="flex gap-4 sm:w-1/2 w-full">
+              <button className="flex items-center justify-center border border-stone-800 rounded-xl aspect-square bg-blue-700 hover:bg-blue-600 transition-colors w-full">03</button>
+              <button className="flex items-center justify-center border border-stone-800 rounded-xl aspect-square bg-teal-700 hover:bg-teal-600 transition-colors w-full">04</button>
+            </div>
           </div>
           <div className="p-4 flex flex-col gap-4">
-            <h1 className="font-bold text-xl text-stone-200">Welcome to my app!</h1>
+            <h1 className="font-bold text-4xl text-stone-200">Rent the right way!</h1>
             <p className="text-stone-400">This is an app idea I had in mind I wanted to make for a while and finally got around to it recently.</p>
             <p className="text-stone-400">There will be many rapid iterations ongoing likely filled with many updates. My goal is to have this functioning ASAP.</p>
           </div>
