@@ -17,7 +17,7 @@ export default function Home() {
       </header>
       <main className="p-4 bg-stone-900 rounded-xl border border-stone-800 container mx-auto">
         <section className="flex flex-col gap-4">
-          <div className="grid grid-rows-2 grid-flow-col gap-4">
+          <div className="grid grid-rows-2 grid-flow-col gap-4 sm:grid-rows-1">
             <button className="flex items-center justify-center border border-stone-800 p-4 rounded-xl aspect-square">01</button>
             <button className="flex items-center justify-center border border-stone-800 p-4 rounded-xl aspect-square">02</button>
             <button className="flex items-center justify-center border border-stone-800 p-4 rounded-xl aspect-square">03</button>
