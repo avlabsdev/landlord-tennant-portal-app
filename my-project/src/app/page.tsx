@@ -7,18 +7,19 @@ import moneyCheckIcon from './images/money-check.svg'
 import requestsIcon from './images/requests.svg'
 import trackingIcon from './images/tracking.svg'
 import crownIcon from './images/crown.svg'
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="mx-auto max-w-3xl p-4 flex flex-col gap-4">
       <header className="flex items-center justify-between container mx-auto p-2 bg-stone-900 rounded-xl border border-stone-800">
-        <a href="/" className="p-2 text-stone-200 flex items-center gap-2">
+        <Link href="/" className="p-2 text-stone-200 flex items-center gap-2">
           <Image src={houseIconSVG} alt="House icon" className="h-6 w-auto" />
           <span className="font-bold">RentHero&trade;</span>
-        </a>
-        <a href="#/" className="p-2 text-stone-200 font-bold">
+        </Link>
+        <Link href="#/" className="p-2 text-stone-200 font-bold">
           <Image src={menuIcon} alt="House icon" className="h-6 w-auto" />
-        </a>
+        </Link>
       </header>
       <main className="p-4 bg-stone-900 rounded-xl border border-stone-800 container mx-auto">
         <section className="flex flex-col gap-4">
@@ -27,20 +28,20 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-4 sm:flex-row">
             <div className="flex gap-4 sm:w-1/2 w-full">
-              <a href="#/" className="flex items-center justify-center border border-stone-800 rounded-xl aspect-square bg-red-700 hover:bg-red-600 transition-colors w-full">
+              <Link href="#/" className="flex items-center justify-center border border-stone-800 rounded-xl aspect-square bg-red-700 hover:bg-red-600 transition-colors w-full">
                 <Image src={moneyCheckIcon} alt="Money check icon" className="h-8" />
-              </a>
-              <a href="#/" className="flex items-center justify-center border border-stone-800 rounded-xl aspect-square bg-purple-700 hover:bg-purple-600 transition-colors w-full">
+              </Link>
+              <Link href="#/" className="flex items-center justify-center border border-stone-800 rounded-xl aspect-square bg-purple-700 hover:bg-purple-600 transition-colors w-full">
                 <Image src={requestsIcon} alt="Money check icon" className="h-8" />
-              </a>
+              </Link>
             </div>
             <div className="flex gap-4 sm:w-1/2 w-full">
-              <a href="#/" className="flex items-center justify-center border border-stone-800 rounded-xl aspect-square bg-blue-700 hover:bg-blue-600 transition-colors w-full">
+              <Link href="#/" className="flex items-center justify-center border border-stone-800 rounded-xl aspect-square bg-blue-700 hover:bg-blue-600 transition-colors w-full">
                 <Image src={trackingIcon} alt="Money check icon" className="h-8" />
-              </a>
-              <a href="#/" className="flex items-center justify-center border border-stone-800 rounded-xl aspect-square bg-teal-700 hover:bg-teal-600 transition-colors w-full">
+              </Link>
+              <Link href="#/" className="flex items-center justify-center border border-stone-800 rounded-xl aspect-square bg-teal-700 hover:bg-teal-600 transition-colors w-full">
                 <Image src={crownIcon} alt="Money check icon" className="h-8" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="p-4 flex flex-col gap-4">
